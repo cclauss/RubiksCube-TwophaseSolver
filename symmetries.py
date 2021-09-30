@@ -1,12 +1,27 @@
 # #################### Symmetry related functions. Symmetry considerations increase the performance of the solver.######
 
-from os import path
-import numpy as np
 import array as ar
+from os import path
+
+import numpy as np
+
 import cubie as cb
-from defs import N_TWIST, N_SYM, N_SYM_D4h, N_FLIP, N_SLICE, N_CORNERS, N_UD_EDGES, N_MOVE, N_FLIPSLICE_CLASS, \
-    N_CORNERS_CLASS
-from enums import Corner as Co, Edge as Ed, Move as Mv, BS
+from defs import (
+    N_CORNERS,
+    N_CORNERS_CLASS,
+    N_FLIP,
+    N_FLIPSLICE_CLASS,
+    N_MOVE,
+    N_SLICE,
+    N_SYM,
+    N_TWIST,
+    N_UD_EDGES,
+    N_SYM_D4h,
+)
+from enums import BS
+from enums import Corner as Co
+from enums import Edge as Ed
+from enums import Move as Mv
 
 INVALID = 65535
 

@@ -1,14 +1,15 @@
 # ##################### The pruning tables cut the search tree during the search. ######################################
 # ##################### The pruning values are stored modulo 3 which saves a lot of memory. ############################
 
+import array as ar
+import time
+from os import path
+
+import cubie as cb
 import defs
 import enums
 import moves as mv
 import symmetries as sy
-import cubie as cb
-from os import path
-import time
-import array as ar
 
 flipslice_twist_depth3 = None  # global variables, initialized during pruning table cration
 corners_ud_edges_depth3 = None

@@ -1,14 +1,22 @@
 # ##### The cube on the coordinate level. It is described by a 3-tuple of natural numbers in phase 1 and phase 2. ######
 
-from os import path
 import array as ar
+from os import path
 
 import cubie as cb
 import enums
 import moves as mv
 import pruning as pr
 import symmetries as sy
-from defs import N_U_EDGES_PHASE2, N_PERM_4, N_CHOOSE_8_4, N_FLIP, N_TWIST, N_UD_EDGES, N_MOVE
+from defs import (
+    N_CHOOSE_8_4,
+    N_FLIP,
+    N_MOVE,
+    N_PERM_4,
+    N_TWIST,
+    N_U_EDGES_PHASE2,
+    N_UD_EDGES,
+)
 from enums import Edge as Ed
 
 SOLVED = 0  # 0 is index of solved state (except for u_edges coordinate)

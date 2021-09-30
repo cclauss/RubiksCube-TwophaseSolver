@@ -5,6 +5,7 @@
 
 import cv2
 import numpy as np
+
 import vision_params
 
 grid_N = 25  # number of grid-squares in vertical direction

@@ -3,16 +3,16 @@
 # While client_gui only allows to set the facelets with the mouse, this file (client_gui2) also takes input from the
 # webcam and includes sliders for some opencv parameters.
 
-from tkinter import *
 import socket
-import face
-import cubie
 from threading import Thread
-from vision2 import grab_colors
-import vision_params
-
+from tkinter import *
 
 import numpy as np
+
+import cubie
+import face
+import vision_params
+from vision2 import grab_colors
 
 # ################################## some global variables and constants ###############################################
 DEFAULT_HOST = 'localhost'

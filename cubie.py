@@ -1,11 +1,13 @@
 # ####### The cube on the cubie level is described by the permutation and orientations of corners and edges ############
 
-from defs import cornerFacelet, edgeFacelet, cornerColor, edgeColor, N_SYM
-from enums import Color, Corner as Co, Edge as Ed
-import face
-from misc import c_nk, rotate_left, rotate_right
 from random import randrange
 
+import face
+from defs import N_SYM, cornerColor, cornerFacelet, edgeColor, edgeFacelet
+from enums import Color
+from enums import Corner as Co
+from enums import Edge as Ed
+from misc import c_nk, rotate_left, rotate_right
 
 # ################## The basic six cube moves described by permutations and changes in orientation #####################
 
@@ -196,7 +198,10 @@ class CubieCube:
 
     def symmetries(self):
         """Generate a list of the symmetries and antisymmetries of the cubie cube."""
-        from symmetries import symCube, inv_idx  # not nice here but else we have circular imports
+        from symmetries import (  # not nice here but else we have circular imports
+            inv_idx,
+            symCube,
+        )
         s = []
         d = CubieCube()
         for j in range(N_SYM):

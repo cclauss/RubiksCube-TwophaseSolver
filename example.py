@@ -23,10 +23,12 @@ quit()
 # Advantage: Tables have to be loaded only once when the server starts. Disadvantage: Network layer must be present.   #
 ########################################################################################################################
 
+from threading import Thread
+
 #----------------------------------------------------------------------------------------------------------------------
 # Method 2a: Start the server from inside a Python script:
 import start_server
-from threading import Thread
+
 background_thread = Thread(target=start_server.start, args=(8080, 20, 2))
 background_thread.start()
 # Server listens now on port 8080, maxlength 20 moves, timeout 2 seconds
@@ -58,7 +60,6 @@ background_thread.start()
 
 import client_gui
 
-
 # From a terminal start the interface with
 # python client_gui.py
 # ----------------------------------------------------------------------------------------------------------------------
@@ -73,4 +74,3 @@ import client_gui
 
 # ----------------------------------------------------------------------------------------------------------------------
 ########################################################################################################################
-

@@ -1,10 +1,10 @@
 # ################ A simple graphical interface which communicates with the server #####################################
 
-from tkinter import *
 import socket
-import face
-import cubie
+from tkinter import *
 
+import cubie
+import face
 
 # ################################## Some global variables and constants ###############################################
 DEFAULT_HOST = 'localhost'

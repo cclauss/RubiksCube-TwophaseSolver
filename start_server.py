@@ -1,8 +1,8 @@
 # ################# Start the server and listen for connections ########################################################
 
-import sockets
 import sys
 
+import sockets
 
 if __name__ == '__main__':  # file is executed
     if len(sys.argv) < 2:

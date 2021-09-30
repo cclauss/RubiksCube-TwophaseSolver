@@ -3,8 +3,9 @@
 import socket
 import sys
 import threading
-import solver
 import time
+
+import solver
 
 
 def client_thread(conn, maxlen, timeout):
